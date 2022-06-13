@@ -17,8 +17,6 @@ function Navbar() {
   const dispatch = useDispatch();
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
-  console.log(user);
-
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const token = localStorage.getItem('request_token');
